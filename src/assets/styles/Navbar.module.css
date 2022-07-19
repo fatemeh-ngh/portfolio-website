@@ -1,0 +1,27 @@
+.container{
+    background-color: #3b3b3b78;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+.linkContainer{
+    margin-right: 150px;
+}
+.linkContainer a{
+    color: #f7f7f7;
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 40px;
+
+
+}
+.socilaContainer{
+    color: #f7f7f7;
+    line-height: 60px;
+    padding-left: 150px;
+
+}
