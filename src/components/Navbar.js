@@ -8,7 +8,15 @@ const Navbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.socilaContainer}>
-                <p>FN<span>.</span></p>
+                <select name="" id="">
+                    <option value="dark">dark</option>
+                    <option value="light">light</option>
+                    <option value="blue">blue</option>
+                </select>
+                <select placeholder='choose your language'>
+                    <option value="eng">English</option>
+                    <option value="fa">فارسی</option>
+                </select>
             </div>
             <div className={styles.linkContainer}>
                 <Link to="/">Home</Link>
@@ -17,7 +25,9 @@ const Navbar = () => {
                 <Link to="/shop">Shop</Link>
                 <Link to="/contact">Contact</Link>
             </div>
-
+            <div>
+                <input type="text" />
+            </div>
         </div>
     );
 };
