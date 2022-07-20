@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React,{useContext} from 'react';
 import {Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
 
@@ -12,23 +12,24 @@ import Portfolio from './components/Portfolio';
 
 
 //Styles
+// import styles from './sass/App.module.scss'
 
 //Context
-// import themeContext from './contexts/themeContext';
+import ThemeContext from './contexts/ThemeContext';
+
 
 const App = () => {
-
   return (
-    <div>
+      <ThemeContext>
         <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/shop' element={<Shop/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-        </Routes>
-    </div>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/portfolio' element={<Portfolio/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/shop' element={<Shop/>}/>
+            <Route path='/blog' element={<Blog/>}/>
+          </Routes>
+      </ThemeContext>
 
   );
 };

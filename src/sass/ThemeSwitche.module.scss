@@ -11,7 +11,7 @@
 }
 .container button{
     @include button();
-    display: none;
+    // display: none;
 }
 .container button:nth-child(1){
     background-color: $white;

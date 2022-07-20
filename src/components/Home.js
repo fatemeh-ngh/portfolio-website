@@ -1,18 +1,21 @@
-import React from 'react';
+import React,{useContext} from 'react';
 
 //Images
 import background from "../assets/images/background.jpg";
 import styled from 'styled-components';
+//Context
+import {Themecontext} from '../contexts/ThemeContext';
 
 
 const Home = () => {
     const Container = styled.div`
         margin: 20px;
         margin-top: 80px;
-        background-color: red
-    `
-    return (
-        <Container>
+        // background-color: red
+        `
+        const [theme, setTheme] = useContext(Themecontext);
+        return (
+        <Container className={theme}>
             <p>Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Quo consequuntur iure
                 similique vitae totam ducimus nemo quaerat.

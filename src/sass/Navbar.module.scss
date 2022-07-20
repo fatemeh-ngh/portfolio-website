@@ -1,5 +1,7 @@
+@import '../base/main';
+
 .container{
-    background-color: #3b3b3b78;
+    // background-color: #3b3b3b78;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -12,7 +14,7 @@
     margin-right: 150px;
 }
 .linkContainer a{
-    color: #f7f7f7;
+    // color: #f7f7f7;
     text-decoration: none;
     line-height: 60px;
     margin-left: 40px;
@@ -21,7 +23,7 @@
 }
 .socilaContainer{
     display: flex;
-    color: #f7f7f7;
+    // color: #f7f7f7;
     line-height: 60px;
     padding-left: 50px;
 }
