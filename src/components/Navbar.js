@@ -13,9 +13,14 @@ import '../base/_main.scss'
 //Context
 import {Themecontext} from '../contexts/ThemeContext';
 
-const Navbar = () => {
 
-    const [theme, setTheme] = useContext(Themecontext);
+//Hook
+import { useTranslation} from "react-i18next";
+
+const Navbar = () => {
+    const {t} = useTranslation();
+
+    const [theme] = useContext(Themecontext);
 
     return (
         <div className={`${styles.container} ${theme}`}>
@@ -24,11 +29,11 @@ const Navbar = () => {
                 <LangSwitcher/>
             </div>
             <div className={styles.linkContainer}>
-                <Link to="/">Home</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/shop">Shop</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/">{t("Home")}</Link>
+                <Link to="/portfolio">{t("Portfolio")}</Link>
+                <Link to="/blog">{t("Blog")}</Link>
+                <Link to="/shop">{t("Shop")}</Link>
+                <Link to="/contact">{t("Contact")}</Link>
             </div>
             <Searchbox/>
         </div>

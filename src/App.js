@@ -30,7 +30,6 @@ const App = () => {
             <Route path='/blog' element={<Blog/>}/>
           </Routes>
       </ThemeContext>
-
   );
 };
 
