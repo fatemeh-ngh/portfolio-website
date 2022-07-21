@@ -4,9 +4,29 @@ import i18next from "i18next";
 import cookies from 'js-cookie'; 
 import classNames from 'classnames';
 import 'bootstrap/dist/js/bootstrap.js';
-//
+import 'flag-icon-css/css/flag-icons.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+//
+// import i18next from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+    i18next
+        .use(LanguageDetector)
+        .use(HttpApi)
+        .use(initReactI18next)
+    .init({
+        // debug: true,
+        supportedLngs:["en", "fa"],
+        fallbackLng: "en",
+        detection: {
+            order: ['cookie', 'path', 'htmlTag', 'localStorage', 'subdomain'],
+            caches: ['cookie']
+        },
+        backend: {
+            loadPath: '../../public/assets/locales/{{lng}}/translation.json'
+        }
+    })
 
 const languages = [
       {
@@ -35,7 +55,6 @@ const GlobalIcon = ({width = 24, height = 24}) => (
 )
 
 export default function LangSwitcher() {
-    
     const currentLanguageCode = cookies.get('i18next') || 'en'
     const currentLanguage = languages.filter(l => l.code === currentLanguageCode)
     const { t } = useTranslation();
