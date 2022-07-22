@@ -1,21 +1,21 @@
 import React,{useContext} from 'react';
 
 //Images
-import background from "../assets/images/background.jpg";
-import styled from 'styled-components';
+// import background from "../assets/images/background.jpg";
+// import styled from 'styled-components';
 //Context
 import {Themecontext} from '../contexts/ThemeContext';
 
 
 const Home = () => {
-    const Container = styled.div`
-        margin: 20px;
-        margin-top: 80px;
-        // background-color: red
-        `
-        const [theme, setTheme] = useContext(Themecontext);
+    // const Container = styled.div`
+    //     margin: 20px;
+    //     margin-top: 80px;
+    //     // background-color: red
+    //     `
+        const [theme,] = useContext(Themecontext);
         return (
-        <Container className={theme}>
+        <div className={theme}>
             <p>Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Quo consequuntur iure
                 similique vitae totam ducimus nemo quaerat.
@@ -92,7 +92,7 @@ const Home = () => {
                  quod iure aliquid adipisci sequi debitis vel eius mollitia nobis tempora.
                 Mollitia aut quos amet quasi eius tenetur ut.
             </p>
-        </Container>
+        </div>
     );
 };
 
