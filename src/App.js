@@ -2,7 +2,6 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
 
-
 //Components
 import Navbar from './components/Navbar';
 import Blog from './components/Blog';
@@ -12,7 +11,7 @@ import Portfolio from './components/Portfolio';
 
 
 //Styles
-// import styles from './sass/App.module.scss'
+import './sass/App.module.scss';
 
 //Context
 import ThemeContext from './contexts/ThemeContext';
@@ -22,14 +21,15 @@ const App = () => {
   return (
       <ThemeContext>
         <Navbar/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/portfolio' element={<Portfolio/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/shop' element={<Shop/>}/>
-            <Route path='/blog' element={<Blog/>}/>
-          </Routes>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/shop' element={<Shop/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+        </Routes>
       </ThemeContext>
+
   );
 };
 

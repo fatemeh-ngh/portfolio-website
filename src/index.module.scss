@@ -1,9 +1,4 @@
 * {
   margin: 0;
   padding: 0;
-  @if ($lang == "en") {
-    font-family: Arial, Helvetica, sans-serif;
-  }@else{
-    font-family: Vazir-normal;
-  }
 }

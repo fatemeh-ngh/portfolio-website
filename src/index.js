@@ -13,7 +13,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   // <Suspense fallback={loadingMarkup}>
     <BrowserRouter>
-      <App />
+      <App/>
     </BrowserRouter>
   // </Suspense>,
   ,document.getElementById('root')

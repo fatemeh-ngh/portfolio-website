@@ -15,39 +15,14 @@ import {Themecontext} from '../contexts/ThemeContext';
 
 //Hook
 import { useTranslation} from "react-i18next";
-// import i18next from "i18next";
-// import HttpApi from 'i18next-http-backend';
-// // import { initReactI18next } from "react-i18next";
-// import LanguageDetector from 'i18next-browser-languagedetector';
-// i18next
-// .use(LanguageDetector)
-// .use(HttpApi)
-// .use(initReactI18next)
-// .init({
-// debug: true,
-// supportedLngs:['en', 'fa'],
-// fallbackLng: 'en',
-// detection: {
-//     order: ['cookie', 'path', 'htmlTag', 'localStorage', 'subdomain'],
-//     caches: ['cookie']
-// },
-// backend: {
-//     loadPath: '../../public/assets/locales/{{lng}}/translation.json',
-// },
-// react:{
-//     useSuspense: false
-// }
-// });
-//
-
 
 const Navbar = () => {
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     const [theme] = useContext(Themecontext);
 
     return (
-        <div className={`${styles.container} ${theme}`}>
+        <div className={`${styles.container} ${theme} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
             <div className={styles.socilaContainer}>
                 <ThemeSwitcher/>
                 <LangSwitcher/>

@@ -1,4 +1,4 @@
-
+@import '../base/colors';
 .light{
     color: $dark-900;
     background-color: $white;
@@ -7,6 +7,9 @@
     color: $white;
     background-color: $dark-900;
 }
-.d{
-    background-color: aqua;
+.english{
+    font-family: 'Courier New', Courier, monospace;
+}
+.farsi{
+    font-family: Vazir-bold;
 }
