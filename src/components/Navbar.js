@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <div className={`${styles.container} ${theme} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
-            <div className={styles.socilaContainer}>
+            <div className={styles.switcherContainer}>
                 <ThemeSwitcher/>
                 <LangSwitcher/>
             </div>

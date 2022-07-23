@@ -39,15 +39,13 @@ const languages = [
       {
         code: 'en',
         name: 'English',
-        country_code: 'gb',
-        font_family: '"Courier New", Courier, monospace'
+        country_code: 'gb'
       },
       {
         code: 'fa',
         name: 'فارسي',
         dir: 'rtl',
-        country_code: 'ir',
-        font_family: 'Vazir-normal'
+        country_code: 'ir'
       }
 ];
 const GlobalIcon = ({width = 24, height = 24}) => (

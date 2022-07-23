@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from '../sass/Searchbox.module.scss'
 
 const Searchbox = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <input type="text" />
         </div>
     );

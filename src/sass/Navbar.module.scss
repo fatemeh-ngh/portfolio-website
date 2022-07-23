@@ -19,9 +19,12 @@
     line-height: 60px;
     margin-left: 40px;
 }
-.socilaContainer{
+.switcherContainer{
+    width: 250px;
     display: flex;
-    // color: #f7f7f7;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // background-color: #d03434;
     line-height: 60px;
     padding-left: 50px;
 }
