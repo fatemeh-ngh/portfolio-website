@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 //Components
 import ThemeSwitcher from './ThemeSwitcher';
 import LangSwitcher from './LangSwitcher';
+import HambergerMenu from './HambergerMenu';
 // import Searchbox from './Searchbox';
 
 //Styles 
@@ -15,11 +16,6 @@ import {Themecontext} from '../contexts/ThemeContext';
 
 //Hook
 import { useTranslation} from "react-i18next";
-
-const hamberHandler= () => {
-
-}
-
 
 
 const Navbar = () => {
@@ -40,11 +36,7 @@ const Navbar = () => {
                 <Link to="/portfolio">{t("Portfolio")}</Link><span> </span>
                 <Link to="/">{t("Home")}</Link><span></span>
             </div>
-            <div onClick={hamberHandler} className={styles.hambergerMenu}>
-                    <span className={styles.ihamber1}></span>
-                    <span className={styles.ihamber2}></span>
-                    <span className={styles.ihamber3}></span>
-            </div>
+            <HambergerMenu/>
         </div>
     );
 };
