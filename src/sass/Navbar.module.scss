@@ -1,7 +1,8 @@
 @import '../base/main';
+@import '../base/colors';
 
 .container{
-    // background-color: #3b3b3b78;
+    background-color: $green-400;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -11,26 +12,102 @@
 
 }
 .linkContainer{
-    margin-right: 150px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 100px;
+    width: 80%;
 }
 .linkContainer a{
-    // font-size: 1.5rem;
+    display: inline-block;
+    height: 45px;
+    line-height: 60px;
+    color: #000;
+    font-size: 1.1rem;
     text-decoration: none;
     line-height: 60px;
-    margin-left: 40px;
+    margin-left: 60px;
+    transition: all 0.25s ease;
+    color: $white;
+}
+
+.linkContainer a:hover{
+   border-bottom: 1px solid $white;
 }
 .switcherContainer{
-    width: 250px;
+    width: 20%;
+    // background-color: aqua;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    // background-color: #d03434;
+    // justify-content: space-between;
     line-height: 60px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 .english{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .farsi{
     font-family: Vazir-bold;
+}
+
+.hambergerMenu{
+    margin: auto 0;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    // background-color: #000;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.hambergerMenu span{
+    width: 100%;
+    height: 4px;
+    background-color: $white;
+}
+
+// .ihamber1{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
+// .ihamber2{
+//     position: absolute;
+//     top: 20;
+//     left: 50;
+// }
+// .ihamber3{
+//     background-color: aqua;
+// }
+
+
+@media (max-width: 1200px){
+    .container{
+        
+    }
+    .linkContainer{
+        padding-right: 50px;
+    }
+    .switcherContainer{
+        padding-left: 50px;
+    }
+}
+@media (max-width: 992px) {
+    .linkContainer{
+        display: none;
+    }
+    .hambergerMenu{
+        display: flex;
+    }
+    .switcherContainer{
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
 }
