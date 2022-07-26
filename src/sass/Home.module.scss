@@ -5,5 +5,12 @@
     font-family: Vazir-bold;
 }
 .container{
-    margin-top: 100px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    // background: url('../assets/svg/character\ 7.svg');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: rgba(0, 0, 0, 0.356);
 }
