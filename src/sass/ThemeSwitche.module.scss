@@ -2,50 +2,56 @@
 @import '../base/Mixix';
 
 .container{
+    width: 80px;
     box-sizing: border-box;
     padding-top: 17px;
-    margin-right: 50px;
-
+    margin-right: 20px;
 }
 .checkbox {
     opacity: 0;
     position: absolute;
-  }
-.label {
-    width: 50px;
-    height: 26px;
-    background-color:#83bdfbdb;
+}
+.label{
     display: flex;
-    border-radius:50px;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
 }
-.ball {
-    width: 20px;
-    height: 20px;
-    background-color: $yellow-000;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.25s ease-out;
-}
-.checkbox:checked + .label .ball{
-    transform: translateX(24px);
-    background-color: $white ;
-}
-.checkbox:checked + .label{
-    background-color: $dark-700;
 
-}
+
+// .label {
+//     width: 50px;
+//     height: 26px;
+//     background-color:#83bdfbdb;
+//     display: flex;
+//     border-radius:50px;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 5px;
+//     position: relative;
+//     transform: scale(1.5);
+// }
+// .ball {
+//     width: 20px;
+//     height: 20px;
+//     background-color: $yellow-000;
+//     position: absolute;
+//     top: 2px;
+//     left: 2px;
+//     border-radius: 50%;
+//     transition: transform 0.25s ease-out;
+// }
+// .checkbox:checked + .label .ball{
+//     transform: translateX(24px);
+//     background-color: $white ;
+// }
+// .checkbox:checked + .label{
+//     background-color: $dark-700;
+
+// }
 .moon{
-    color: $dark-000;
+    color: $white;
 }
 .sun{
-    color: $yellow-000;
+    color: $white;
 }
 @media (max-width: 992px) {
     .container{

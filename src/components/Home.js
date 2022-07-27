@@ -22,13 +22,15 @@ const Home = () => {
         const {t, i18n} = useTranslation();
 
         return (
-        <div className={styles.container}>
-            <div>
-                <p>{t("INTRODUCTION")}</p>
+        <div className={`${styles.container} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
+            <div className={styles.mainContainer}>
+                <div className={styles.textContainer}>
+                {/* <p>{t("INTRODUCTION")}</p> */}
                 <h1>{t("name")}</h1>
                 <h2>{t("job")}</h2>
                 <p>{t("about")}</p>
-                <div>
+                </div>
+                <div className={styles.buttonContainer}>
                     <button>{t("downloadcv")}</button>
                     <Link to='/contact'>{t("Contact")}</Link>
                 </div>

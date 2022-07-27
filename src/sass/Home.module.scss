@@ -1,16 +1,62 @@
+@import '../base/colors'; 
+
 .english{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .farsi{
     font-family: Vazir-bold;
+    text-align: right;
+    font-size: 1.5rem;
+    // font-weight: 800;
 }
 .container{
     width: 100%;
     height: calc(100vh - 60px);
     margin-top: 60px;
-    // background: url('../assets/svg/character\ 7.svg');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-color: rgba(0, 0, 0, 0.356);
+    background: url('../assets/svg/character\ 22.svg');
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    background-size:400px;
+    background-color: rgba(9, 255, 9, 0.441);
+    color: $white;
+}
+.mainContainer{
+    // background-color: rgba(255, 0, 0, 0.509);
+    width: 50%;
+    height: 80%;
+    border-radius: 100px;
+    // box-sizing: border-box;
+    // margin-top: 100px;
+    margin-left: 100px;
+}
+.textContainer{
+    // background-color: rgba(42, 48, 165, 0.391);
+}
+.buttonContainer{
+    // background-color: rgba(136, 255, 127, 0.466);
+    justify-content: space-between;
+}
+.buttonContainer button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+    color: $summer-1;
+    background-color: $green-800;
+}
+.buttonContainer button:hover{
+
+}
+.buttonContainer a{
+    text-decoration: none;
+    color: $summer-1;
+    background-color: $summer-4;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.buttonContainer a:hover{
+    color: $summer-1;
+    background-color: $summer-2;
 }

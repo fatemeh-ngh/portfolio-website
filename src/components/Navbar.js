@@ -24,7 +24,7 @@ const Navbar = () => {
     const [theme] = useContext(Themecontext);
 
     return (
-        <div className={`${styles.container} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
+        <div className={`${styles.container} ${theme} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
             <div className={styles.switcherContainer}>
                 <ThemeSwitcher/>
                 <LangSwitcher/>
