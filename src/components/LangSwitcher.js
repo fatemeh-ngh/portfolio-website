@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'flag-icon-css/css/flag-icons.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import styles from '../sass/LangSwitcher.module.css'
+// import styles from "../sass/LangSwitcher.module.scss"
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -81,13 +81,10 @@ function LangSwitcher() {
                         data-bs-toggle="dropdown" 
                         // aria-expanded="false"
                         style={{
-                        // marginRight: '20px',
                         background: "none",
-                        // outline: 'none',
                         border: 'none',
                         alignItems: "center",
                         boxShadow: 'none',
-                        // lineHeight: '60px'
                         display: 'flex',
                         alignContent: 'center',
                         boxSizing: 'border-box',
@@ -96,30 +93,7 @@ function LangSwitcher() {
                     >
                         <GlobalIcon/>
                     </button>
-                    <input type="checkbox" id="checkbox"/>
-                    <label htmlFor="checkbox">
-                    <button
-                        // type="button" 
-                        data-bs-toggle="dropdown" 
-                        // aria-expanded="false"
-                        style={{
-                        // marginRight: '20px',
-                        background: "none",
-                        // outline: 'none',
-                        border: 'none',
-                        alignItems: "center",
-                        boxShadow: 'none',
-                        // lineHeight: '60px'
-                        display: 'flex',
-                        alignContent: 'center',
-                        boxSizing: 'border-box',
-                        paddingTop: '17px',
-                        }}
-                    >
-                        <GlobalIcon/>
-                    </button>
-                    </label>
-                    {/* <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li>
                             <span className="dropdown-item-text">{t('Language')}</span>
                         </li>
@@ -141,7 +115,7 @@ function LangSwitcher() {
                                 </button>
                             </li>
                         ))}
-                    </ul> */}
+                    </ul>
                 </div>
             </div>
     ); 

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 //Styles
 import styles from '../sass/Home.module.scss';
-
+import p from '../assets/images/background.jpg'
 //Hook
 import { useTranslation} from "react-i18next";
 // ${theme} 
@@ -27,12 +27,12 @@ const Home = () => {
                 <div className={styles.textContainer}>
                 {/* <p>{t("INTRODUCTION")}</p> */}
                 <h1>{t("name")}</h1>
-                <h2>{t("job")}</h2>
+                <h4>{t("job")}</h4>
                 <p>{t("about")}</p>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button>{t("downloadcv")}</button>
-                    <Link to='/contact'>{t("Contact")}</Link>
+                    <a className={styles.button} href={p} download>{t("downloadcv")}</a>
+                    <Link className={styles.link} to='/contact'>{t("Contact")}</Link>
                 </div>
             </div>
         </div>
