@@ -10,7 +10,7 @@ import {Themecontext} from '../contexts/ThemeContext';
 const ThemeSwitcher = () => {
 
     const [theme , setTheme] = useContext(Themecontext);
-
+    
     return (
         <div className={styles.container}>
             <input 

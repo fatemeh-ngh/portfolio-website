@@ -1,10 +1,16 @@
 @import '../base/main';
 @import '../base/colors';
 
+.dark{
+    background-color: #950000c4;
+}
+.light{
+    background-color: #4DABF7c4;
+}
 .container{
     // background-color: #54dd6bc4;
     // background-color: #5f29a7cb;
-    background-color: #4DABF7c4;
+    // background-color: #4DABF7c4;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -12,6 +18,7 @@
     position: fixed;
     top: 0;
     transition: all 0.3s ease;
+    z-index: 200;
 
 }
 .linkContainer{

@@ -9,5 +9,10 @@
   "name": "Fatemeh Negahdari",
   "job": "Fron-End Developer",
   "about": "Lorem ipsum dolor sit amet consectetuadipisicing elit. Hic, aliquam voluptatenesciunt qui velit dicta?Necessitatibus cupiditate assumenda quo asperiores.",
-  "downloadcv": "Download CV"
+  "downloadcv": "Download CV",
+  "works" : "My Projects",
+  "shopcart" : "Shopping Cart",
+  "ashopcart" : "a simple shopping cart with context",
+  "currency" : "Digital Currency",
+  "acurrency" : "showing the price of digital currencies by useing api"
 }
