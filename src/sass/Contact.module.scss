@@ -1,0 +1,49 @@
+.container{
+    margin: 40px;
+    margin-top: 100px;
+    background-color: aqua;
+    text-align: center;
+}
+.formContainer{
+    margin: 50px auto;
+    background-color: bisque;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(400px, 1fr));
+}
+.formContainer input{
+    height: 30px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #4c4c4c;
+    margin-bottom: 20px;
+    background: none;
+    // background-color: rgba(255, 255, 0, 0.217);
+    transition: all 0.3s ease;
+}
+.formContainer label{
+    width: fit-content;
+    // background-color: blueviolet;
+    font-size: 0.7rem;
+    position: relative;
+    top: -45px;
+    left: 5px;
+}
+.formContainer input:focus{
+    border-bottom: 3px solid #4c4c4c;
+}
+.formContainer input:focus + label{
+    top: -67px;
+    color: brown;
+}
+.formContainer button{
+    font-size: 0.8rem;
+    width: 150px;
+    height: 30px;
+    border: none;
+}
+.contactWay{
+
+}
