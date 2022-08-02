@@ -2,8 +2,8 @@ import React, { useEffect} from "react";
 import { useTranslation } from "react-i18next";
 import cookies from 'js-cookie'; 
 import classNames from 'classnames';
-import 'bootstrap/dist/js/bootstrap.js';
 import 'flag-icon-css/css/flag-icons.min.css'
+import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import styles from "../sass/LangSwitcher.module.scss"
 import i18next from "i18next";

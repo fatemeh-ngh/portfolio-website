@@ -14,5 +14,11 @@
   "shopcart" : "Shopping Cart",
   "ashopcart" : "a simple shopping cart with context",
   "currency" : "Digital Currency",
-  "acurrency" : "showing the price of digital currencies by useing api"
+  "acurrency" : "showing the price of digital currencies by useing api",
+  "contactwithme": "Contact with Me",
+  "fullname" : "Full Name",
+  "phonenumber": "Phone Number",
+  "emailaddress" : "Email Adderss",
+  "message": "Message",
+  "sendmessage" : "Send Message"
 }
