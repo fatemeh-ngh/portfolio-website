@@ -1,12 +1,12 @@
 .container{
     margin: 40px;
     margin-top: 100px;
-    background-color: aqua;
+    // background-color: aqua;
     text-align: center;
 }
 .formContainer{
     margin: 50px auto;
-    background-color: bisque;
+    // background-color: bisque;
     width: 400px;
     display: grid;
     grid-template-columns: repeat(auto, minmax(400px, 1fr));
@@ -23,7 +23,7 @@
     // background-color: rgba(255, 255, 0, 0.217);
     transition: all 0.3s ease;
 }
-.formContainer label{
+.formContainer > label{
     width: fit-content;
     // background-color: blueviolet;
     font-size: 0.7rem;
@@ -35,11 +35,26 @@
     border-bottom: 3px solid #4c4c4c;
 }
 .formContainer input:focus + label{
-    top: -67px;
+    top: -69px;
     color: brown;
 }
+.formContainer input:not(:placeholder-shown) + label{
+    top: -69px;
+    color: brown;
+}
+textarea{
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+}
+textarea::placeholder{
+    font-size: 0.7rem;
+}
 .formContainer button{
+    background-color: #2990ff;
     font-size: 0.8rem;
+    margin-top: 20px;
     width: 150px;
     height: 30px;
     border: none;

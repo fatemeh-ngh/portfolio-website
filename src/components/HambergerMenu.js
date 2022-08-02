@@ -9,7 +9,6 @@ const HambergerMenu = () => {
 
     const {t} = useTranslation();
     const [open, setOpen] = useState('false')
-    console.log(open);
     return (
         <div className={`${styles.cotainer} ${!open && styles.open}`}>
             <div className={styles.icon} onClick={() => setOpen(!open)}>
