@@ -1,3 +1,22 @@
+.english{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.farsi{
+    font-family: Vazir-bold;
+    font-size: 1.3rem;
+    .formContainer > label{
+        font-size: 0.9rem;
+    }
+    textarea::placeholder{
+        font-size: 0.9rem;
+    }
+}
+.dark{
+    background-color: #950000c4;
+}
+.light{
+    background-color: #4DABF7c4;
+}
 .container{
     margin: 40px;
     margin-top: 100px;
@@ -16,9 +35,19 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .contactWayContainer div{
+    height: 90px;
     margin: 20px;
     background-color: #2990ff;
-    box-shadow: 4px 4px 8px #4c4c4c;
+    box-shadow: 4px 4px 8px #8d8d8d;
+    transition: all 0.2s ease;
+}
+.contactWayContainer div:hover{
+    box-shadow: 4px 4px 8px #6e6e6e;
+
+}
+.contactWayContainer a{
+    color: #fff;
+    text-decoration: none;
 }
 .formContainer input{
     height: 30px;
@@ -63,10 +92,17 @@ textarea::placeholder{
 .formContainer button{
     background-color: #2990ff;
     font-size: 0.8rem;
+    color: #fff;
     margin-top: 20px;
     width: 150px;
     height: 30px;
-    border: none;
+    border: none;    
+    box-shadow: 2px 2px 4px #8d8d8d;
+    transition: all 0.2s ease;
+}
+.formContainer button:hover{
+    box-shadow: 3px 3px 4px #6e6e6e;
+
 }
 .contactWay{
 
@@ -83,5 +119,15 @@ textarea::placeholder{
 }
 
 @media (max-width: 576px) {
-    
+    .container{
+        margin: 40px;
+        margin-top: 80px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .contactWayContainer{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .formContainer{
+        width: 400px;
+    }
 }

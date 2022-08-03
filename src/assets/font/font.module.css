@@ -28,3 +28,12 @@
   .l{
      font-family: Arial, Helvetica, sans-serif;
   }
+  @font-face {
+     font-family: yekan;
+     src: url('./yekan-font/yekan-regular.eot');
+     src: url('./yekan-font/yekan-regular.eot?#iefix') format('embedded-opentype'),
+          url('./yekan-font/yekan-regular.woff') format('woff'),
+          url('./yekan-font/yekan-regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+   }
