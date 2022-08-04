@@ -10,9 +10,6 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 
 
-//Styles
-import './sass/App.module.scss';
-
 //Context
 import ThemeContext from './contexts/ThemeContext';
 

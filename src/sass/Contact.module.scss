@@ -1,3 +1,5 @@
+@import '../base/colors';
+
 .english{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,27 +7,50 @@
     font-family: Vazir-bold;
     font-size: 1.3rem;
     .formContainer > label{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     textarea::placeholder{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+    }
+    .formContainer button{
+    font-size: 1.1rem;
     }
 }
 .dark{
-    background-color: #950000c4;
+    background-color: $background;
+    color: $color;
+    .contactWayContainer div{
+        background-color: $dcolor;
+        box-shadow: 4px 4px 8px $boxshadow;
+
+    }
+    .formContainer button{
+        background-color: $dcolor;
+        box-shadow: 2px 2px 4px $boxshadow;
+    }
+    textarea{
+        background-color: $background;
+    }
+    textarea::placeholder{
+        color: $color;
+    }
+
 }
 .light{
-    background-color: #4DABF7c4;
+
 }
 .container{
     margin: 40px;
+    // padding: 40px 0;
     margin-top: 100px;
     text-align: center;
     display: grid;
+    transition: all 0.5s ease;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .formContainer{
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -37,6 +62,7 @@
 .contactWayContainer div{
     height: 90px;
     margin: 20px;
+    border-radius: 80px;
     background-color: #2990ff;
     box-shadow: 4px 4px 8px #8d8d8d;
     transition: all 0.2s ease;
@@ -49,6 +75,9 @@
     color: #fff;
     text-decoration: none;
 }
+.formContainer h1{
+    margin: 40px 0;
+}
 .formContainer input{
     height: 30px;
     outline: none;
@@ -58,27 +87,41 @@
     border-bottom: 1px solid #4c4c4c;
     margin-bottom: 20px;
     background: none;
-    // background-color: rgba(255, 255, 0, 0.217);
     transition: all 0.3s ease;
 }
 .formContainer > label{
     width: fit-content;
-    // background-color: blueviolet;
-    font-size: 0.7rem;
+    font-size: 1rem;
     position: relative;
-    top: -45px;
+    top: -53px;
     left: 5px;
 }
 .formContainer input:focus{
     border-bottom: 3px solid #4c4c4c;
 }
 .formContainer input:focus + label{
-    top: -69px;
-    color: brown;
+    top: -80px;
+    color: $dcolor;
 }
 .formContainer input:not(:placeholder-shown) + label{
     top: -69px;
-    color: brown;
+    color: $dcolor;
+}
+.formContainer button{
+    background-color: #2990ff;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;    
+    box-shadow: 2px 2px 4px #8d8d8d;
+    border-radius: 80px;
+    transition: all 0.2s ease;
+}
+.formContainer button:hover{
+    box-shadow: 3px 3px 4px #6e6e6e;
+
 }
 textarea{
     outline: none;
@@ -87,37 +130,8 @@ textarea{
     position: relative;
 }
 textarea::placeholder{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
-.formContainer button{
-    background-color: #2990ff;
-    font-size: 0.8rem;
-    color: #fff;
-    margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    border: none;    
-    box-shadow: 2px 2px 4px #8d8d8d;
-    transition: all 0.2s ease;
-}
-.formContainer button:hover{
-    box-shadow: 3px 3px 4px #6e6e6e;
-
-}
-.contactWay{
-
-}
-@media (max-width: 1200px){
-
-}
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 768px) {
-    
-}
-
 @media (max-width: 576px) {
     .container{
         margin: 40px;
