@@ -47,5 +47,5 @@
    
    @font-face {
      font-family: 'YekanBakhBold';
-     src: local('YekanBakhBold'), url(./yekan-font/YekanBakhBold.woff) format('woff');
+     src: url('./yekan-font/YekanBakhBold.woff') format('woff');
    }
