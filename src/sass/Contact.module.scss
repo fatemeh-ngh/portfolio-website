@@ -1,19 +1,21 @@
 @import '../base/colors';
+@import '../assets/font/font.module.css';
+
 
 .english{
     font-family: Arial, Helvetica, sans-serif;
 }
 .farsi{
-    font-family: Vazir-bold;
-    font-size: 1.3rem;
+    font-family: 'Vazir-normal';
+    font-size: 1.1rem;
     .formContainer > label{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     textarea::placeholder{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .formContainer button{
-    font-size: 1.1rem;
+    font-size: 1rem;
     }
 }
 .dark{
@@ -34,9 +36,6 @@
     textarea::placeholder{
         color: $color;
     }
-
-}
-.light{
 
 }
 .container{

@@ -1,8 +1,15 @@
 @import '../base/colors';
+@import '../assets/font/font.module.css';
 
 .cotainer{
     display: flex;
     flex-direction: row-reverse;
+}
+.english{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.farsi{
+    font-family: 'Vazir-normal';
 }
 .MenuContainer{
     position: absolute;
@@ -26,7 +33,7 @@
     transition: all 0.2s linear;
 }
 .MenuContainer a:hover{
-    background-color: #00bcbc;
+    background-color: #00bcbcc4;
 }
 .icon{
     margin: auto 0;

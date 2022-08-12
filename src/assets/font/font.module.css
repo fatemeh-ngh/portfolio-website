@@ -1,39 +1,51 @@
 @font-face {
-    font-family: Vazir-normal;
+    font-family: 'Vazir-normal';
     src: url('./vazir-font-v16.1.0/Vazir.eot');
     src: url('./vazir-font-v16.1.0/Vazir.eot?#iefix') format('embedded-opentype'),
          url('./vazir-font-v16.1.0/Vazir.woff') format('woff'),
          url('./vazir-font-v16.1.0/Vazir.ttf') format('truetype');
     font-weight: normal;
-  }
-        
-  @font-face {
-    font-family: Vazir-bold;
+}
+
+@font-face {
+    font-family: 'Vazir-bold';
     src: url('./vazir-font-v16.1.0/Vazir-Bold.eot');
     src: url('./vazir-font-v16.1.0/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
          url('./vazir-font-v16.1.0/Vazir-Bold.woff') format('woff'),
          url('./vazir-font-v16.1.0/Vazir-Bold.ttf') format('truetype');
     font-weight: bold;
-  }
+}
   
-  @font-face {
-    font-family: Vazir-300;
+@font-face {
+    font-family: 'Vazir-300';
     src: url('./vazir-font-v16.1.0/Vazir-Light.eot');
     src: url('./vazir-font-v16.1.0/Vazir-Light.eot?#iefix') format('embedded-opentype'),
          url('./vazir-font-v16.1.0/Vazir-Light.woff') format('woff'),
          url('./vazir-font-v16.1.0/Vazir-Light.ttf') format('truetype');
     font-weight: 300;
-  }
+}
 
-  .l{
-     font-family: Arial, Helvetica, sans-serif;
-  }
-  @font-face {
-     font-family: yekan;
-     src: url('./yekan-font/yekan-regular.eot');
-     src: url('./yekan-font/yekan-regular.eot?#iefix') format('embedded-opentype'),
-          url('./yekan-font/yekan-regular.woff') format('woff'),
-          url('./yekan-font/yekan-regular.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+@font-face {
+     font-family: 'iranyekanwebregular';
+     src: url('./yekan-font/iranyekanwebregular.woff') format('woff');
+   }
+   
+   @font-face {
+     font-family: 'iranyekanwebmedium';
+     src: url('./yekan-font/iranyekanwebmedium.woff') format('woff');
+   }
+   
+   @font-face {
+     font-family: 'YekanBakhMedium';
+     src: url('./yekan-font/YekanBakhMedium.woff') format('woff');
+   }
+   
+   @font-face {
+     font-family: 'YekanBakhHeavy';
+     src: url('./yekan-font/YekanBakhHeavy.woff') format('woff');
+   }
+   
+   @font-face {
+     font-family: 'YekanBakhBold';
+     src: local('YekanBakhBold'), url(./yekan-font/YekanBakhBold.woff) format('woff');
    }

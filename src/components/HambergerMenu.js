@@ -7,10 +7,13 @@ import { useTranslation} from "react-i18next";
 
 const HambergerMenu = () => {
 
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
     const [open, setOpen] = useState('false')
     return (
-        <div className={`${styles.cotainer} ${!open && styles.open}`}>
+        <div className={`${styles.cotainer} 
+        ${!open && styles.open}
+        ${i18n.language === 'en' ? styles.english : styles.farsi}
+        `}>
             <div className={styles.icon} onClick={() => setOpen(!open)}>
                 <span></span>
                 <span></span>
