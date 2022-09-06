@@ -4,7 +4,7 @@
   "Portfolio": "Portfolio",
   "Blog": "Blog",
   "Shop": "Shop",
-  "Contact": "Contact Me",
+  "Contact": "Contact",
   "INTRODUCTION": "INTRODUCTION",
   "name": "Fatemeh Negahdari",
   "job": "Fron-End Developer",
@@ -15,10 +15,12 @@
   "ashopcart" : "a simple shopping cart with context",
   "currency" : "Digital Currency",
   "acurrency" : "showing the price of digital currencies by useing api",
-  "contactwithme": "Contact with Me",
-  "fullname" : "Full Name",
-  "phonenumber": "Phone Number",
-  "emailaddress" : "Email Adderss",
+  "fullname" : "Your Name",
+  "phonenumber": "Your Phone Number",
+  "emailaddress" : "Your Email",
   "message": "Message",
-  "sendmessage" : "Send Message"
+  "sendmessage" : "Send Message",
+  "email": "Email",
+  "call": "Call",
+  "telegram": "Telegram"
 }

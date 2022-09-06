@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-
+import { Card } from 'react-bootstrap';
 //Styles
 import styles from '../sass/Portfolio.module.scss'
 
@@ -26,6 +26,15 @@ const Portfolio = () => {
                 <h1>{t("works")}</h1>
             </div>
             <div className={`${styles.container}`}>
+                <Card>
+                    <Card.Img src={shopcart}/>
+                    <Card.Body>
+                        <Card.Link href='https://celadon-ganache-50d36d.netlify.app/products'>
+                            <Card.Title>سبد خرید</Card.Title>
+                        </Card.Link>
+                        <Card.Text>سبد خريد ساخته شده با كانتكست</Card.Text>
+                    </Card.Body>
+                </Card>
                 <div className={styles.item}>
                     <a target={"-blank"} href="https://celadon-ganache-50d36d.netlify.app/products">
                         <img src={shopcart} alt="shopcart" />

@@ -20,6 +20,9 @@
   "phonenumber": " شماره تماس",
   "emailaddress" : " آدرس ايميل",
   "message": " متن پيام",
-  "sendmessage" : " ارسال پيام"
+  "sendmessage" : " ارسال پيام",
+  "email": " ايميل",
+  "call": " شماره موبايل",
+  "telegram": " تلگرام"
 
 }

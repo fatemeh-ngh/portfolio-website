@@ -7,15 +7,8 @@
 }
 .farsi{
     font-family: 'Vazir-normal';
-    font-size: 1.1rem;
-    .formContainer > label{
-        font-size: 1.1rem;
-    }
-    textarea::placeholder{
-        font-size: 1.1rem;
-    }
-    .formContainer button{
-    font-size: 1rem;
+    .contactWayContainer a svg{
+        margin: 0 5px;
     }
 }
 .dark{
@@ -40,7 +33,6 @@
 }
 .container{
     margin: 40px;
-    // padding: 40px 0;
     margin-top: 100px;
     text-align: center;
     display: grid;
@@ -54,73 +46,75 @@
     display: flex;
     flex-direction: column;
 }
-.contactWayContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.contactWayContainer div{
-    height: 90px;
-    margin: 20px;
-    border-radius: 80px;
-    background-color: #2990ff;
-    box-shadow: 4px 4px 8px #8d8d8d;
+.contactWayContainer a{
+    width: 310px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid #003063;
+    margin: 5px;
+    display: flex;
+    align-items: center;
     transition: all 0.2s ease;
 }
-.contactWayContainer div:hover{
-    box-shadow: 4px 4px 8px #6e6e6e;
-
+.contactWayContainer a:hover{
+    border: 1px solid #0f71da;
+    box-shadow: 4px 4px 8px #0f71da34, -4px -4px 8px #0f71da34;
 }
-.contactWayContainer a{
-    color: #fff;
-    text-decoration: none;
+.contactWayContainer a div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 20px;
+    height: 60px;
+    // background-color: #003063;
+    width: 250px;
+}
+.contactWayContainer a p{
+    font-size: 1rem;
+}
+.contactWayContainer a svg{
+    border-radius: 50%;
+    background-color: #a8d2ff;
+    color: #003063;
+    margin-left: 5px;
 }
 .formContainer h1{
     margin: 40px 0;
 }
 .formContainer input{
-    height: 30px;
+    height: 45px;
     outline: none;
     box-sizing: border-box;
     padding: 5px;
-    border: none;
-    border-bottom: 1px solid #4c4c4c;
+    border: 0.5px solid #3d3d3d6b;
+    border-radius: 3px;
     margin-bottom: 20px;
     background: none;
     transition: all 0.3s ease;
 }
-.formContainer > label{
-    width: fit-content;
-    font-size: 1rem;
-    position: relative;
-    top: -53px;
-    left: 5px;
+.formContainer input::placeholder{
+    font-size: 0.9rem;
 }
 .formContainer input:focus{
-    border-bottom: 3px solid #4c4c4c;
-}
-.formContainer input:focus + label{
-    top: -80px;
-    color: $dcolor;
-}
-.formContainer input:not(:placeholder-shown) + label{
-    top: -69px;
-    color: $dcolor;
+    border: 0.5px solid #0f71da;
 }
 .formContainer button{
-    background-color: #2990ff;
+    background-color: #68affb;
     font-size: 1rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-top: 20px;
     width: 150px;
     height: 50px;
-    border: none;    
-    box-shadow: 2px 2px 4px #8d8d8d;
+    border: none; 
     border-radius: 80px;
     transition: all 0.2s ease;
 }
 .formContainer button:hover{
-    box-shadow: 3px 3px 4px #6e6e6e;
-
+    background-color: #1184ff;
 }
 textarea{
     outline: none;
