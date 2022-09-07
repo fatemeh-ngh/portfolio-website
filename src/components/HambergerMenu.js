@@ -1,17 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState, useContext } from 'react';
 import styles from '../sass/Hamber.module.scss'
 import { Link } from 'react-router-dom';
 
 //Hook
 import { useTranslation} from "react-i18next";
 
+//Context
+import {Themecontext} from '../contexts/ThemeContext';
+
 const HambergerMenu = () => {
 
     const {t, i18n} = useTranslation();
     const [open, setOpen] = useState('false')
+    const [theme] = useContext(Themecontext);
+
     return (
-        <div className={`${styles.cotainer} 
+        <div className={`
+        ${styles.cotainer} 
         ${!open && styles.open}
+        ${theme === "dark" && styles.dark} 
         ${i18n.language === 'en' ? styles.english : styles.farsi}
         `}>
             <div className={styles.icon} onClick={() => setOpen(!open)}>

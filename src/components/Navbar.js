@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 
 //Components
-import ThemeSwitcher from './ThemeSwitcher';
+import ThemeSwitcher from './ThemeSwitcher'; 
 import LangSwitcher from './LangSwitcher';
 import HambergerMenu from './HambergerMenu';
 // import Searchbox from './Searchbox';

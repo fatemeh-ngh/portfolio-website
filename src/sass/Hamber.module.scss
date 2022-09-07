@@ -9,7 +9,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .farsi{
-    font-family: 'Vazir-normal';
+    font-family: 'Vazir-normal'; 
+}
+.dark{
+    .MenuContainer a{
+        background-color: #b600005f;
+    }
+    .MenuContainer a:hover{
+        background-color: #fc00005e;
+    }
 }
 .MenuContainer{
     position: absolute;
@@ -19,7 +27,7 @@
     display: none;
     flex-direction: column-reverse;
     justify-content: space-between;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
     transform: scaleY(0);
 }
 .MenuContainer a{
@@ -30,7 +38,7 @@
     line-height: 60px;
     text-align: center;
     background-color: #087bffc4;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
 }
 .MenuContainer a:hover{
     background-color: #00bcbcc4;
