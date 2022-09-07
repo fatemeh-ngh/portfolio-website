@@ -14,14 +14,35 @@
 .dark{
     background-color: $background;
     color: $color;
-    .contactWayContainer div{
+    .contactWayContainer a{
+        color: #fff;
+        border: 1px solid $red-800;
+    }
+    .contactWayContainer a:hover{
+        border: 1px solid $red-800;
+        box-shadow: 5px 5px 10px #ff000050, -5px -5px 10px #ff000050;
+    }
+    .contactWayContainer a svg{
         background-color: $dcolor;
-        box-shadow: 4px 4px 8px $boxshadow;
-
+        color: #fff;
     }
     .formContainer button{
+        color: #fff;
         background-color: $dcolor;
         box-shadow: 2px 2px 4px $boxshadow;
+    }
+    .formContainer button:hover{
+        background-color: $red-800;
+    }
+    .formContainer input{    
+        border: 0.5px solid #a6a6a66b;
+    }
+    .formContainer input:focus{
+        border: 0.5px solid $red-800;
+    }
+    .formContainer input::placeholder{
+        color: #fff;
+
     }
     textarea{
         background-color: $background;
@@ -29,20 +50,22 @@
     textarea::placeholder{
         color: $color;
     }
-
+    textarea:focus{
+        border: 0.5px solid $red-800;
+    }
 }
-.container{
-    margin: 40px;
-    margin-top: 100px;
-    text-align: center;
-    display: grid;
-    transition: all 0.5s ease;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
+// .container{
+//     margin: 40px;
+//     margin-top: 100px;
+//     text-align: center;
+//     display: grid;
+//     transition: all 0.5s ease;
+//     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+// }
 .formContainer{
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 500px;
+    // width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +78,7 @@
     margin: 5px;
     display: flex;
     align-items: center;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 .contactWayContainer a:hover{
     border: 1px solid #0f71da;
@@ -86,6 +109,7 @@
     margin: 40px 0;
 }
 .formContainer input{
+    width: auto;
     height: 45px;
     outline: none;
     box-sizing: border-box;
@@ -111,12 +135,13 @@
     height: 50px;
     border: none; 
     border-radius: 80px;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 .formContainer button:hover{
     background-color: #1184ff;
 }
 textarea{
+    width: auto;
     outline: none;
     box-sizing: border-box;
     padding: 5px;
@@ -125,16 +150,6 @@ textarea{
 textarea::placeholder{
     font-size: 0.9rem;
 }
-@media (max-width: 576px) {
-    .container{
-        margin: 40px;
-        margin-top: 80px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    .contactWayContainer{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    .formContainer{
-        width: 400px;
-    }
+textarea:focus{
+    border: 0.5px solid #0f71da;
 }
