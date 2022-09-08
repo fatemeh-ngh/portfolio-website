@@ -64,7 +64,7 @@ const Aboute = () => {
                     <div className={styles.title}>
                         <h3>i'm Fatemeh Negahdari and <span>
                                 <Typewriter 
-                                    options={{strings: ['React', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript'],
+                                    options={{strings: ['Web Developer', 'Front-End Developer'],
                                     autoStart: true,
                                     loop: true,}}
                                 />
@@ -86,8 +86,8 @@ const Aboute = () => {
                             <li><i class="bi bi-gift-fill"></i><span>Birthday: 09.12.2001</span></li>
                             <li><i class="bi bi-calendar-week"></i><span>Age:  21</span></li>
                             <li><i class="bi bi-geo-alt-fill"></i><span>Location: Neyriz, Fars, Iran</span></li>
-                            <li><i class="bi bi-envelope-fill"></i><span>Mail: ftm.ngh.2001@gmail.com</span></li>
-                            <li><i class="bi bi-telephone-fill"></i><span>Phone: +98 0938 749 1560</span></li>
+                            <li><i class="bi bi-envelope-fill"></i><a href="mailto:ftm.ngh.2001@gmail.com" target="-blank" style={{cursor: 'pointer'}}>Mail: ftm.ngh.2001@gmail.com</a></li>
+                            <li><i class="bi bi-telephone-fill"></i><a href="tel:09387491560" target="-blank">Phone: +98 0938 749 1560</a></li>
                             <li><i class="bi bi-mortarboard-fill"></i><span>Degree: diploma</span></li>
                         </ul>
                     </div>
