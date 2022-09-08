@@ -1,11 +1,65 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import pic from '../assets/images/background.jpg'
+import { Container, Row, Col } from 'react-bootstrap';
+//Styles
+import styles from '../sass/About.module.scss'
+
 
 const Aboute = () => {
     return (
-        <div id='about'>
-            About me
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore sunt quasi a delectus numquam nulla voluptate consectetur praesentium est, doloribus recusandae dolorum fugit minima deleniti? Officia autem recusandae tempora odit error. Quia laudantium dolorum, aspernatur obcaecati in eius amet delectus minus placeat a dicta omnis nisi velit quasi veritatis ipsum recusandae neque accusantium non, ut libero! Quod eum error facere voluptatibus? Autem modi fugit ipsum esse consequuntur, sunt sit, adipisci recusandae at molestias, suscipit magnam aliquam cum. Voluptatem unde voluptatum iure quod voluptates, quas fugiat ullam enim perferendis rem laudantium eius, sint architecto? Architecto, voluptatum, magni expedita necessitatibus inventore, est laborum ea nulla commodi ipsum dolorum? Libero, provident obcaecati. Fugiat autem dolores et, dicta praesentium temporibus? Voluptate, aliquid. Non autem aut est dignissimos. Reiciendis quaerat, nisi ipsa architecto asperiores maiores repellat cupiditate dolor cumque exercitationem veniam, et optio, porro deserunt sapiente voluptatibus rerum? Culpa hic temporibus ea repellat, tempore perspiciatis laudantium eius praesentium incidunt consequatur iste. Suscipit vel saepe eveniet enim eaque ad nihil placeat ipsam, unde omnis. Dolore libero amet inventore ut rem nemo excepturi iste dignissimos sed quas officia temporibus unde sunt omnis impedit ab, minus magni consequuntur mollitia! Quod in error suscipit maxime, nesciunt nihil commodi laborum veritatis earum quidem dicta sunt ea sint beatae impedit exercitationem enim ut rerum. Itaque, vero blanditiis. Culpa magnam nihil, laboriosam veritatis sapiente optio molestiae voluptatem officiis rerum est excepturi dolore vel quos explicabo accusantium at dolorum ullam? Molestias maxime quas excepturi adipisci facilis culpa dicta sint perspiciatis quo, error delectus ducimus, minus necessitatibus exercitationem aliquid harum odio deserunt. Maiores cum sit, in natus eius deserunt dicta facere assumenda rem, autem quisquam vitae dolore delectus quo sapiente deleniti voluptatum placeat aliquid labore tenetur dignissimos. Vitae, repellat eveniet, mollitia dicta pariatur repudiandae assumenda laboriosam impedit fugiat voluptatibus labore nam quas quod velit nemo placeat vero illum soluta beatae dolore quam ipsam? Dolor esse nobis fuga sapiente aut debitis numquam quidem amet laborum? Provident tempora exercitationem, in praesentium fugiat obcaecati alias itaque cumque voluptatum veritatis facilis odio architecto recusandae similique quaerat pariatur a minima quis nihil consectetur quas laudantium deserunt eaque aperiam. Reiciendis necessitatibus optio voluptatibus dolorem, laborum facere hic eaque, illo, quidem accusamus cupiditate a tempore minus culpa facilis dolores incidunt sunt nesciunt ipsa eveniet consequatur qui nemo aliquam! Nisi obcaecati earum impedit, quasi repellat laboriosam placeat laudantium nobis molestiae nulla iste dignissimos consectetur corporis error soluta amet! Repudiandae natus, dicta eum maiores, iste veritatis harum animi, officia eos nemo iusto. Ab a, illo incidunt sint, repellendus eveniet nemo dolorem adipisci, sunt iste esse totam animi! Sed minima culpa nesciunt maxime iusto nulla delectus aut aliquam, voluptate quis, ut facere eaque, similique dicta repellendus. Eligendi molestias deserunt beatae earum quis fugiat repellat quod, magni optio a reprehenderit dolorem eius veritatis, omnis tempora illum praesentium excepturi nihil neque eveniet. Vero unde mollitia harum reprehenderit corporis tenetur enim accusamus eligendi! Quam quidem aspernatur consectetur minus est rem odit numquam praesentium temporibus porro explicabo nihil, ipsam impedit tempore accusamus non consequuntur, amet voluptate quaerat?</p>
-        </div>
+        <Container id='about'>
+           <Row>
+                <span>BIOGRAPHY</span>
+                <h3>Aboute Me</h3>
+           </Row>
+            <Row>
+                <Col className={styles.left}>
+                    <div className={styles.border}>
+                    </div>
+                    <img style={{width: "350px", height: "400px"}} src={pic} alt="image" />
+                </Col>
+                <Col className={styles.right}>
+                    <div className={styles.title}>
+                        <h3>i'm Fatemeh Negahdari and
+                            <span>
+                            <Typewriter 
+                                options={{strings: ['React', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript'],
+                                autoStart: true,
+                                loop: true,}}
+                            />
+                            </span>
+                        </h3>
+                    </div>
+                    <div className={styles.text}>
+                        <p>
+                        Hi! My name is <span>Fatemeh Negahdari</span>.
+                         I am a Web Developer, 
+                         and I'm very passionate and dedicated to my work. 
+                         With 20 years experience as a professional Web developer, 
+                         I have acquired the skills and knowledge necessary to make 
+                         your project a success.
+                        </p>
+                    </div>
+                    <div className={styles.about}>
+                        <ul>
+                            <li><i class="bi bi-gift-fill"></i><span>Birthday: 09.12.2001</span></li>
+                            <li><i class="bi bi-calendar-week"></i><span>Age:  21</span></li>
+                            <li><i class="bi bi-geo-alt-fill"></i><span>Location: Neyriz, Fars, Iran</span></li>
+                            <li><i class="bi bi-envelope-fill"></i><span>Mail: ftm.ngh.2001@gmail.com</span></li>
+                            <li><i class="bi bi-telephone-fill"></i><span>Phone: +98 0938 749 1560</span></li>
+                            <li><i class="bi bi-mortarboard-fill"></i><span>Degree: diploma</span></li>
+                        </ul>
+                    </div>
+                    <div className={styles.aboutShortCot}>
+                        <a href="#" download>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </Col>
+           </Row>
+        </Container>
     );
 };
 
