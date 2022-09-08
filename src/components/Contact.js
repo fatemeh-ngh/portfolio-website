@@ -40,7 +40,7 @@ const Contact = () => {
             <Row>
                 <Col>
                     <Container>
-                        <Form className='w-sm-5' ref={form} onSubmit={sendEmail} className={styles.formContainer}>
+                        <Form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
                             <h1 className=''>{t("Contact")}</h1>
                             <input placeholder={t("fullname")} type="text" id='name' /> 
                             <input placeholder={t("phonenumber")} type="text" id='number'name='name'/> 
