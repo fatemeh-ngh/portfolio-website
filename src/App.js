@@ -8,15 +8,18 @@ import Blog from './components/Blog';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Cursor from './components/Cursor';
 
 
 //Context
 import ThemeContext from './contexts/ThemeContext';
 
 
+
 const App = () => {
   return (
       <ThemeContext>
+        <Cursor/>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -25,8 +28,10 @@ const App = () => {
           <Route path='/shop' element={<Shop/>}/>
           <Route path='/blog' element={<Blog/>}/>
         </Routes>
+        {/* <Home/>
+        <Portfolio/>
+        <Contact/> */}
       </ThemeContext>
-
   );
 };
 
