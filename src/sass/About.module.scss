@@ -1,12 +1,12 @@
-.container{
-    // background-color: #ffd289;
-}
+@import "../base/colors";
+
+
 .header{
     padding:80px 0 80px 0;
 }
 .header span{
     font-size: 0.7rem;
-    color: #0095ff;
+    color: $color-item;
 }
 .left{
     position: relative;
@@ -30,18 +30,17 @@
     border: 5px solid #000;
 }
 .title span{
-    color: #0095ff;
+    color: $color-item;
 }
 .text p span{
-    color: #0095ff;
+    color: $color-item;
 }
 .about ul{
     padding-left: 5px;
     list-style: none;
-    // background-color: #79c7ff;
 }
 .about ul li i{
-    color: #0095ff;
+    color: $color-item;
     margin-right: 5px;
     font-size: 0.9rem;
 }
@@ -74,7 +73,7 @@
 }
 .download a{
     text-decoration: none;
-    background-color: #0095ff;
+    background-color: $color-item;
     color: #fff;
     padding: 8px;
     position: relative;
@@ -84,27 +83,19 @@
 .download a:hover{
     background-color: #007cd5;
 }
-// .download a::before{
-//     content: " ";
-//     position: absolute;
-//     top: 0;
-//     left: -25%;
-//     width: 20px;
-//     height: 100%;
-//     background-color: #4e01e6c5;
-//     z-index: 1;
-//     transform: skew(50deg);
-//     transition: all 0.5s ease;
-//     overflow: hidden;
-
-// }
-// .download a:hover ::before{
-//     width: 50px;
-// }
 
 @media (max-width: 992px) {
     .right{
         margin-top: 70px;
+    }
+    
+}
+@media (max-width: 580px) {
+    .left{
+        transform: translate(0, 0) !important;
+    }
+    .left img {
+        transform: translate(0, 0) !important; 
     }
     
 }

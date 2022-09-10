@@ -3,10 +3,10 @@
 @import '../base/colors';
 
 .dark{
-    background-color: #830000c4;
+    background-color: $color-item;
 }
 .light{
-    background-color: #4DABF7c4;
+    background-color: $color-item;
 }
 .english{
     font-family: Arial, Helvetica, sans-serif;

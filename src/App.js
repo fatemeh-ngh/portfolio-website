@@ -9,6 +9,7 @@ import Shop from './components/Shop';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Cursor from './components/Cursor';
+import ColorChanger from './components/ColorChanger';
 
 
 //Context
@@ -19,8 +20,9 @@ import ThemeContext from './contexts/ThemeContext';
 const App = () => {
   return (
       <ThemeContext>
-        <Cursor/>
+        {/* <Cursor/> */}
         <Navbar/>
+        <ColorChanger/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/portfolio' element={<Portfolio/>}/>

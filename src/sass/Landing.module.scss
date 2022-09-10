@@ -1,3 +1,6 @@
+@import "../base/colors";
+
+
 .english{
     font-family: Arial, Helvetica, sans-serif;    
 }
@@ -10,7 +13,7 @@
     background: url('../assets/images/background3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #09e6ff70;
+    // background-color: #09e6ff70;
     position: relative;
 }
 .bcakground::after{
@@ -42,11 +45,11 @@
     color: #fff;
 }
 .name span{
-    color: #00c3ff;
+    color: $color-item;
 }
 .content p span{
     margin-left: 5px;
-    color: #00c3ff;
+    color: $color-item;
 }
 .skill{
     display: flex;
