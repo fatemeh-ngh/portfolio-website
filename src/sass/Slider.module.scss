@@ -1,0 +1,31 @@
+@import '../base/colors';
+.container{
+    padding: 50px 0;
+    // width: 90%;
+}
+.container span{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: $color-item;
+    margin-bottom: 2rem;
+}
+.container p{
+    margin-top: 2rem;
+    text-align: center;
+    // background-color: palegoldenrod;
+}
+.container p a{
+    padding: 10px;
+    text-decoration: none;
+    color: $color-item;
+    border: 1px solid $color-item;
+}
+@media (min-width: 992px) {
+    .container{
+        width: 900px;
+    }
+    .item img{
+        width: 700px;
+        height: 500px;
+    }
+}
