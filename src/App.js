@@ -1,39 +1,33 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom'
-import Home from './components/Home';
 
 //Components
-import Navbar from './components/Navbar';
-import Blog from './components/Blog';
-import Shop from './components/Shop';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Cursor from './components/Cursor';
-import ColorChanger from './components/ColorChanger';
+import Navbar from './components/Navbar/Navbar';
+import Blog from './components/Blog/Blog';
+import Shop from './components/Shop/Shop';
+import Contact from './components/Contact/Contact';
+import Portfolio from './components/Portfolio/Portfolio';
+import Cursor from './components/Cursor/Cursor';
+import ColorChanger from './components/ColorChanger/ColorChanger';
+import Home from './components/Home/Home';
 
-
-//Context
-import ThemeContext from './contexts/ThemeContext';
-
+import Scroll from './contexts/ScrollContext';
 
 
 const App = () => {
   return (
-      <ThemeContext>
-        {/* <Cursor/> */}
-        <Navbar/>
-        <ColorChanger/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/shop' element={<Shop/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-        </Routes>
-        {/* <Home/>
-        <Portfolio/>
-        <Contact/> */}
-      </ThemeContext>
+    <Scroll>
+      {/* <Cursor/> */}
+      <Navbar/>
+      <ColorChanger/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/shop' element={<Shop/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+      </Routes>
+    </Scroll>
   );
 };
 

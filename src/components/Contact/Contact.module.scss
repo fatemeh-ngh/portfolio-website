@@ -1,0 +1,147 @@
+@import '../../sass/colors';
+@import '../../assets/font/font.module.css';
+
+
+.english{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.farsi{
+    font-family: 'Vazir-normal';
+    .contactWayContainer a svg{
+        margin: 0 5px;
+    }
+}
+.dark{
+    background-color: $background;
+    color: $color;
+    .contactWayContainer a{
+        color: #fff;
+        border: 1px solid $red-800;
+    }
+    .contactWayContainer a:hover{
+        border: 1px solid $red-800;
+        box-shadow: 5px 5px 10px #ff000050, -5px -5px 10px #ff000050;
+    }
+    .contactWayContainer a svg{
+        background-color: $dcolor;
+        color: #fff;
+    }
+    .formContainer button{
+        color: #fff;
+        background-color: $dcolor;
+        box-shadow: 2px 2px 4px $boxshadow;
+    }
+    .formContainer button:hover{
+        background-color: $red-800;
+    }
+    .formContainer input{    
+        border: 0.5px solid #a6a6a66b;
+    }
+    .formContainer input:focus{
+        border: 0.5px solid $red-800;
+    }
+    .formContainer input::placeholder{
+        color: #fff;
+
+    }
+    textarea{
+        background-color: $background;
+    }
+    textarea::placeholder{
+        color: $color;
+    }
+    textarea:focus{
+        border: 0.5px solid $red-800;
+    }
+}
+.formContainer{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    // width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.contactWayContainer a{
+    width: 310px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid #003063;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.contactWayContainer a:hover{
+    border: 1px solid #0f71da;
+    box-shadow: 4px 4px 8px #0f71da34, -4px -4px 8px #0f71da34;
+}
+.contactWayContainer a div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 20px;
+    height: 60px;
+    // background-color: #003063;
+    width: 250px;
+}
+.contactWayContainer a p{
+    font-size: 1rem;
+}
+.contactWayContainer a svg{
+    border-radius: 50%;
+    background-color: #a8d2ff;
+    color: #003063;
+    margin-left: 5px;
+}
+.formContainer h1{
+    margin: 40px 0;
+}
+.formContainer input{
+    width: auto;
+    height: 45px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 0.5px solid #3d3d3d6b;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background: none;
+    transition: all 0.3s ease;
+}
+.formContainer input::placeholder{
+    font-size: 0.9rem;
+}
+.formContainer input:focus{
+    border: 0.5px solid #0f71da;
+}
+.formContainer button{
+    background-color: #68affb;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none; 
+    border-radius: 80px;
+    transition: all 0.3s ease;
+}
+.formContainer button:hover{
+    background-color: #1184ff;
+}
+textarea{
+    width: auto;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+}
+textarea::placeholder{
+    font-size: 0.9rem;
+}
+textarea:focus{
+    border: 0.5px solid #0f71da;
+}

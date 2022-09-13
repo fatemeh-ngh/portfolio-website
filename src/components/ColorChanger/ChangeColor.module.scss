@@ -1,0 +1,102 @@
+@import "../../sass/colors";
+
+.container {
+  background-color: #000000;
+  width: 200px;
+  height: 300px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 5;
+  padding: 0 20px 10px 20px;
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+  transform: translateX(200px);
+}
+.open {
+  transform: translateX(0px);
+}
+.icon {
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  position: relative;
+  left: -60px;
+}
+.icon svg {
+  color: $color-item;
+  animation: rotate 2s infinite linear;
+  position: relative;
+  left: 8px;
+  top: 6px;
+  cursor: pointer;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.pallet p {
+  font-size: 0.8rem;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.pallet p::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  width: 90%;
+  height: 1px;
+  background-color: #4b4b4b;
+}
+.pallet ul li {
+  width: 25px;
+  height: 25px;
+  background-color: #0088ff;
+  border-radius: 50%;
+}
+.cursor li:nth-child(2) {
+  margin-left: 20px;
+}
+.palletUl {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  grid-template-rows: repeat(2, 30px);
+  list-style: none;
+  column-gap: 15px;
+  margin-right: 50px; 
+  padding: 10px;
+  padding-left: 20px;
+}
+.palletUl li{
+    cursor: pointer;
+}
+.palletUl li:nth-child(1) {
+  background-color: $item1;
+}
+.palletUl li:nth-child(2) {
+  background-color: $item2;
+}
+.palletUl li:nth-child(3) {
+  background-color: $item3;
+}
+.palletUl li:nth-child(4) {
+  background-color: $item4;
+}
+.palletUl li:nth-child(5) {
+  background-color: $item5;
+}
+.palletUl li:nth-child(6) {
+  background-color: $item6;
+}
+.palletUl li:nth-child(7) {
+  background-color: $item7;
+}
+.palletUl li:nth-child(8) {
+  background-color: $item8;
+}

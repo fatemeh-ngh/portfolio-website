@@ -1,0 +1,55 @@
+@import '../../sass/colors';
+@import '../../assets/font/font.module.css';
+
+.english{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.farsi{
+    font-family: 'Vazir-normal';
+}
+.container{
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    padding-bottom: 50px;
+}
+.titleContainer{
+    padding-bottom: 70px;
+}
+.titleContainer span{
+    font-size: 0.8rem;
+    color: $color-item;
+}
+.titleContainer p{
+    font-size: 1.2rem;
+}
+.filterContainer ul{
+    // margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+.filterContainer ul li{
+    margin: 0 10px;
+    color: $color-item;
+    font-size: 1rem;
+}
+.filterContainer ul li a{
+    text-decoration: none;
+    color: $color-item;
+}
+.imageContainer{
+    margin: 0;
+}
+.imageContainer div{
+    margin: 10px 0px;
+    width: 450px;
+    text-align: center;
+}
+.imageContainer img{
+    padding: 0;
+    margin: 0;
+    width: 450px;
+    height: 400px;
+    border: 2px solid $color-item;
+}

@@ -1,0 +1,123 @@
+@import "../../../sass/colors";
+
+.english{
+    direction: ltr;
+}
+.farsi{
+    direction: rtl;
+    .left{
+        direction: ltr;
+    }
+}
+.header{
+    padding:80px 0 80px 0;
+}
+.header span{
+    font-size: 0.7rem;
+    color: $color-item;
+}
+.left{
+    position: relative;
+    transition: all 0.2s ease;
+
+}
+.left img {
+    z-index: 2;
+    transition: all 0.2s ease;
+    width: 400px;
+    height: 450px;
+}
+
+.border::after{
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 400px;
+    height: 450px;
+    border: 5px solid #000;
+}
+.title span{
+    color: $color-item;
+}
+.text p span{
+    color: $color-item;
+}
+.about ul{
+    padding-left: 5px;
+    list-style: none;
+}
+.about ul li i{
+    color: $color-item;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+.about ul li span{
+    font-size: 0.8rem;
+}
+.about ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+    position: relative;
+}
+.about ul li:hover a::after{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    animation: a 0.7s 1 ease;
+}
+@keyframes a {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.download a{
+    text-decoration: none;
+    background-color: $color-item;
+    color: #fff;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.download a:hover{
+    background-color: #007cd5;
+}
+
+@media (max-width: 992px) {
+    .right{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 580px) {
+    .border::after{
+        width: 350px;
+        height: 400px;
+    }
+    .left{
+        transform: translate(0, 0) !important;
+    }
+    .left img {
+        transform: translate(0, 0) !important; 
+        width: 350px;
+        height: 400px;
+    } 
+}
+@media (max-width: 420px) {
+    .border::after{
+        width: 300px;
+        height: 350px;
+    }
+    .left img { 
+        width: 300px;
+        height: 350px;
+    } 
+}
