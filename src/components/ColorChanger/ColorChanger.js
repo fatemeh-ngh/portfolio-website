@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styles from './ChangeColor.module.scss';
 
+//Hook
+import { useTranslation} from "react-i18next";
 
 const ColorChanger = () => {
 
+    const {t} = useTranslation();
     const [state, setState] = useState(false);
     const [color, setColor] = useState("#0095ff");
 
@@ -14,7 +17,6 @@ const ColorChanger = () => {
     useEffect(() => {
         document.documentElement.style.setProperty('--app-color', `${color}`)
     }, [color]);
-
     return (
         <div className={`
             ${styles.container}
@@ -27,7 +29,7 @@ const ColorChanger = () => {
             </div>
             <div className={styles.palletContainer}>
                 <div className={styles.pallet}>
-                    <p>Unlimited Colors</p>
+                    <p>{t("UnlimitedColors")}</p>
                     <ul className={styles.palletUl}>
                         <li onClick={() => setColor("#0086e6")}></li>
                         <li onClick={() => setColor("#aa00de")}></li>
@@ -37,12 +39,6 @@ const ColorChanger = () => {
                         <li onClick={() => setColor("#c30000")}></li>
                         <li onClick={() => setColor("#787878")}></li>
                         <li onClick={() => setColor("#bf7331")}></li>
-                    </ul>
-                    <p className={styles.button}>Magic Cursorv</p>
-                    <span></span>
-                    <ul className={styles.cursor}>
-                        <li></li>
-                        <li></li>
                     </ul>
                 </div>
             </div>

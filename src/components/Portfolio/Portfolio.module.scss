@@ -52,4 +52,8 @@
     width: 450px;
     height: 400px;
     border: 2px solid $color-item;
+    transition: all 0.4s ease;
+}
+.imageContainer img:hover{
+    box-shadow: 4px 4px 8px #a0a0a07d;
 }

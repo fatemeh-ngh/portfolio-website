@@ -1,9 +1,12 @@
+@import '../../sass/colors';
+
 .circle{
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     width: 50px;
     height: 50px;
-    background-color: #00a6ff72;
+    border: 1px solid $color-item;
+    // background-color: #00a6ff72;
     border-radius: 50%;
     transition: 0.1s all cubic-bezier(0.5, 0.5, 0.5, 0.8);
 }

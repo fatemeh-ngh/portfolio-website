@@ -18,6 +18,10 @@
     text-decoration: none;
     color: $color-item;
     border: 1px solid $color-item;
+    transition: all 0.4s ease;
+}
+.container p a:hover{
+    box-shadow: 4px 4px 8px #a0a0a07d;
 }
 @media (min-width: 992px) {
     .container{

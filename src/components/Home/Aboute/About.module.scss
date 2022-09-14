@@ -84,12 +84,10 @@
     background-color: $color-item;
     color: #fff;
     padding: 8px;
-    position: relative;
-    overflow: hidden;
     transition: all 0.4s ease;
 }
 .download a:hover{
-    background-color: #007cd5;
+    box-shadow: 4px 4px 8px #a0a0a07d;
 }
 
 @media (max-width: 992px) {

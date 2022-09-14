@@ -8,10 +8,16 @@ import item2 from '../../../assets/images/background.jpg';
 import item3 from '../../../assets/images/background3.jpg';
 import item4 from '../../../assets/images/currency.png';
 
+//Hook
+import { useTranslation} from "react-i18next";
+
 const Slider = () => {
+
+    const {t, i18n} = useTranslation();
+
     return (
-        <Container className={styles.container}>
-            <span>PORTFOLIO</span>
+        <Container className={styles.container} dir={`${i18n.language === 'en' ? "ltr" : "rtl"}`}>
+            <span>{t("PORTFOLIO")}</span>
             <Carousel fade className={styles.carousel}>
                 <Carousel.Item className={styles.item}>
                     <img className='w-100' src={item1} alt="item1" />
@@ -26,7 +32,7 @@ const Slider = () => {
                     <img className={styles.item} src={item4} alt="item4" />
                 </Carousel.Item> */}
             </Carousel>
-            <p><a href="./portfolio">see more</a></p>
+            <p><a href="./portfolio">{t("Seemore")}</a></p>
         </Container>
     );
 };

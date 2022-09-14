@@ -18,8 +18,8 @@ const Cursor = () => {
         }
     }, [])
 
-    let xc = cords.x - 25;
-    let yc = cords.y - 25;
+    let xc = cords.x + 10;
+    let yc = cords.y - 40;
 
     return (
         <div className={styles.circle} style={{transform: `translate3d(${xc}px, ${yc}px, 0px)`}}></div>

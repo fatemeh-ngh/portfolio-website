@@ -17,7 +17,7 @@ import Scroll from './contexts/ScrollContext';
 const App = () => {
   return (
     <Scroll>
-      {/* <Cursor/> */}
+      <Cursor/>
       <Navbar/>
       <ColorChanger/>
       <Routes>

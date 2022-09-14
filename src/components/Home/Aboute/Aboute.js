@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 import Typewriter from 'typewriter-effect';
 
 //Image
-import pic from '../../../assets/images/background.jpg'
+import pic from '../../../assets/images/woman.png';
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -54,12 +54,12 @@ const Aboute = () => {
                         <h3>{t("i'm")}<span>
                                 {i18n.language === 'en' ?
                                     <Typewriter 
-                                    options={{strings: ['Web Developer', 'Front-End Developer'],
+                                    options={{strings: ['Front-End Developer'],
                                     autoStart: true,
                                     loop: true,}}/>          
                                 : 
                                     <Typewriter 
-                                    options={{strings: ['توسعه دهنده وب', 'فرانت اند دولوپر'],
+                                    options={{strings: ['فرانت اند دولوپر'],
                                     autoStart: true,
                                     loop: true,}}/>  
                                 }
@@ -68,7 +68,7 @@ const Aboute = () => {
                     </div>
                     <div className={styles.text}>
                         <p>
-                        {t("himynameis")} <span>{t("name")}{t("lastname")}</span>.
+                        {/* <span>{t("name")}{t("lastname")}</span>. */}
                          {t("Iama...")}
                         </p>
                     </div>
