@@ -14,7 +14,6 @@ import {ScrollContext} from '../../contexts/ScrollContext';
 //Hook
 import { useTranslation} from "react-i18next";
 
-
 const Navbar = () => {
 
     const {t, i18n} = useTranslation();
@@ -25,7 +24,7 @@ const Navbar = () => {
             <div className={`
             ${styles.container} 
             ${scroll && `${styles.scroll}`}
-            ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
+            ${i18n.language === 'fa' && styles.farsi}`}>
                 <div className={styles.switcherContainer}>
                     <LangSwitcher/>
                 </div>

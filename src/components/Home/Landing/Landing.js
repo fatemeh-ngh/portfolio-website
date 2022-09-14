@@ -15,7 +15,7 @@ const Landing = () => {
     return (
         <div>
             <div className={styles.bcakground}></div>
-            <div className={`${styles.content} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
+            <div className={`${styles.content} ${i18n.language === 'fa' && styles.farsi}`}>
                     <img src={img} style={{width: '170px',height: "170px", borderRadius: "50%"}} alt="person" />
                     <h3 className={styles.name}>{t("name")} <span>{t("lastname")}</span></h3>
                     <p style={{color: '#fff'}} className={styles.skill}>

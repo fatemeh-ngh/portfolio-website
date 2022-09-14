@@ -10,9 +10,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Cursor from './components/Cursor/Cursor';
 import ColorChanger from './components/ColorChanger/ColorChanger';
 import Home from './components/Home/Home';
-
 import Scroll from './contexts/ScrollContext';
-
 
 const App = () => {
   return (

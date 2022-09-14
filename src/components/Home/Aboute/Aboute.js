@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 //Image
 import pic from '../../../assets/images/woman.png';
-
+import resume from '../../../assets/pdf/Resume.pdf';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -37,7 +37,7 @@ const Aboute = () => {
     const y = globalCoords.y / 1000;
 
     return (
-        <Container id='about' className={`${styles.container} ${i18n.language === 'en' ? styles.english : styles.farsi}`}>
+        <Container id='about' className={`${styles.container} ${i18n.language === 'fa' && styles.farsi}`}>
             <Row className={styles.header}>
                 <span>{t("BIOGRAPHY")}</span>
                 <h3>{t("Aboute Me")}</h3>
@@ -83,7 +83,7 @@ const Aboute = () => {
                         </ul>
                     </div>
                     <div className={styles.download}>
-                        <a href="#" download>
+                        <a href={resume} download>
                             <span>{t("downloadcv")}</span>
                         </a>
                     </div>

@@ -6,7 +6,7 @@ import { useTranslation} from "react-i18next";
 
 const ColorChanger = () => {
 
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
     const [state, setState] = useState(false);
     const [color, setColor] = useState("#0095ff");
 
@@ -21,6 +21,7 @@ const ColorChanger = () => {
         <div className={`
             ${styles.container}
             ${state && styles.open}
+            ${i18n.language === 'en' ? styles.english : styles.farsi}
             `}>
             <div className={styles.icon}>
                 <svg onClick={() => clickHandler()} xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">

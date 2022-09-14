@@ -21,7 +21,7 @@ const HambergerMenu = () => {
         ${styles.cotainer}
         ${scroll ? styles.scroll : styles.notScroll}
         ${!open && styles.open}
-        ${i18n.language === 'en' ? styles.english : styles.farsi}
+        ${i18n.language === 'fa' && styles.farsi}
         `}>
             <div className={styles.icon} onClick={() => setOpen(!open)}>
                 <span></span>

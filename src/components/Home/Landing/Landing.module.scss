@@ -1,12 +1,9 @@
 @import "../../../sass/colors";
+@import '../../../sass/mixin';
+@import '../../../assets/font/font.module.css';
 
-.english{
-    font-family: Arial, Helvetica, sans-serif; 
-    direction: ltr;   
-}
 .farsi{
-    font-family: 'Vazir-normal'; 
-    direction: rtl;
+    @include farsi;
     p span{
         margin-right: 5px;
     }

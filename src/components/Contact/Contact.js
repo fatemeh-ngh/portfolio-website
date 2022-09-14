@@ -7,7 +7,6 @@ import styles from './Contact.module.scss';
 //Hook
 import { useTranslation} from "react-i18next";
 
-
 const Contact = () => {
 
     const form = useRef();
@@ -25,28 +24,19 @@ const Contact = () => {
     }
 
     return (
-        <Container fluid 
-            dir={i18n.language === 'en' ? 'ltr' : 'rtl'} 
-            className={`
-                ${styles.container}
-                ${i18n.language === 'en' ? styles.english : styles.farsi}
-                mt-5 
-            `}>
+        <Container className={`${styles.container} ${i18n.language === 'fa' && styles.farsi}`}>
             <Row>
-                <Col>
-                    <Container>
+                <Col className={styles.leftContainer}>
+                       <h1>{t("Contact")}</h1>
                         <Form ref={form} onSubmit={sendEmail} className={styles.formContainer}>
-                            <h1 className=''>{t("Contact")}</h1>
-                            <input placeholder={t("fullname")} type="text" id='name' /> 
-                            <input placeholder={t("phonenumber")} type="text" id='number'name='name'/> 
-                            <input placeholder={t("emailaddress")} type="email" id='email' name='email'/> 
+                            <input pattern='\w{3,12}' placeholder={t("fullname")} type="text" id='name' /> 
+                            <input pattern='\d{11}' placeholder={t("phonenumber")} type="text" id='number'name='name'/> 
+                            <input pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' placeholder={t("emailaddress")} type="email" id='email' name='email'/> 
                             <textarea placeholder={t("message")} name="text" id="text" cols="40" rows="10"></textarea>
                             <button type='submit' value="Send">{t("sendmessage")}</button>
                         </Form>
-                    </Container>
                 </Col>
                 <Col>
-                <Container className='pt-5'>
                     <Row className={`${styles.contactWayContainer} pt-lg-5 pb-5 `}>
                         <Col as={'a'} href="mailto:ftm.ngh.2001@gmail.com" target="-blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-open" viewBox="0 -5 16 27">
@@ -76,7 +66,6 @@ const Contact = () => {
                             </div>
                         </Col>
                     </Row>
-                </Container>
             </Col>
         </Row>
     </Container>

@@ -1,5 +1,12 @@
 @import "../../sass/colors";
+@import '../../assets/font/font.module.css';
 
+.english{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.farsi{
+  font-family: 'Vazir-normal';
+}
 .container {
   background-color: #000000;
   width: 200px;
